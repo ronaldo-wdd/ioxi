@@ -1,0 +1,10 @@
+.SocialMedias {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+    .SocialMedias { margin-left: 70px; }
+    .Contacts h1 { display: block!important; }
+}

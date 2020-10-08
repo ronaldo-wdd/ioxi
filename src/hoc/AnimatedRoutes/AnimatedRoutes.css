@@ -1,0 +1,27 @@
+.SlideIn-enter {
+    opacity: 0;
+    width: 0px;
+}
+
+.SlideIn-enter-active {
+    opacity: 1;
+    width: 100%;
+    transition: all 0.7s ease-out;
+}
+
+.SlideIn-exit {
+    opacity: 1;
+    width: 100%;
+    transition: all 0.7s ease-out;
+}
+
+.SlideIn-exit-active {
+    opacity: 0;
+    width: 0px;
+    transition: all 0.7s ease-out;
+}
+
+.SlideIn-enter-done {
+    opacity: 1;
+    width: 100%;
+}

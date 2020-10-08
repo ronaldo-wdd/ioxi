@@ -1,0 +1,31 @@
+.Logo {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(55px);
+    transition: all .7s;
+    pointer-events: none;
+}
+
+.Logo svg {
+    height: 80%;
+    width: 100%;
+    margin: 0 auto;
+    pointer-events: auto;
+}
+
+.Logo a:focus { outline: none; }
+
+.Logo.Header {
+    transform: translateY(calc(50% - 10px));
+}
+
+@media(max-width: 1024px) {
+    .Logo {
+        transform: translateY(calc(50% - 10px));
+    }
+}
+
+@media(max-width: 768px) {
+    /* .Logo { margin: auto; } */
+}

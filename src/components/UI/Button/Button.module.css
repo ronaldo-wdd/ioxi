@@ -1,0 +1,49 @@
+.Button {
+    position: relative;
+    line-height: 46px;
+    min-width: 46px;
+    min-height: 46px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Button p {
+    color: #232323;
+    margin: 0;
+    padding: 0 26px;
+    font-size: .8rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.Button:hover p { color: #fc6; transition: all .3s; }
+
+.Button img {
+    max-width: 25px;
+    max-height: 25px;
+    width: auto;
+    height: auto;
+}
+
+.Button svg {
+    width: 46px;
+    height: 46px;
+}
+
+.Button::after {
+    position: absolute;
+    content: "";
+    opacity: 0;
+    background: #fc6;
+}   
+.Button:active::after {
+    animation: animate .5s ease-in;
+}
+
+@keyframes animate {
+    from {width: 100%; height: 100%; opacity: .7}
+    to {width: calc(100% + 10px); height: calc(100% + 10px); opacity: 0}
+}

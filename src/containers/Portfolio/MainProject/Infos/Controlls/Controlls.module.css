@@ -1,0 +1,36 @@
+.Controlls {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 99;
+
+    transition: all .4s;
+}
+
+.Controlls > div {
+    position: relative;
+}
+
+.Controlls .NextPrev {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Controlls .NextPrev > div {
+    margin-left: 10px;
+}
+
+@media(max-width: 1199px) {
+    .Controlls { justify-content: start; }
+    .Controlls .NextPrev > div {  margin-left: 20px; }
+    .Controlls .NextPrev > div:first-child { display: none; }
+}
+@media(max-width: 768px) {
+    .Controlls { position: relative; transform: translateY(0); z-index: 0; }
+}

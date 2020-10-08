@@ -1,0 +1,27 @@
+.slide-enter {
+    opacity: 0;
+    width: 0px;
+}
+
+.slide-enter-active {
+    opacity: 1;
+    width: 100%;
+    transition: all 0.7s ease-out;
+}
+
+.slide-exit {
+    opacity: 1;
+    width: 100%;
+    transition: all 0.7s ease-out;
+}
+
+.slide-exit-active {
+    opacity: 0;
+    width: 0px;
+    transition: all 0.7s ease-out;
+}
+
+.slide-enter-done {
+    opacity: 1;
+    width: 100%;
+}

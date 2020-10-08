@@ -1,0 +1,84 @@
+.Navigation {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform-origin: center;
+    transform: rotate(-90deg) translateY(-7px);
+    /* height: 200px; */
+    text-align: center;
+    white-space: nowrap;
+    transition: all .6s .3s;
+    pointer-events: none;
+}
+
+.Scrollbar {
+    height: 1px;
+    width: 80px;
+    background-color: #fff;
+    position: relative;
+    padding: 0 5px;
+}
+.Scrollbar > div {
+    /* content: ''; */
+    position: absolute;
+    margin: 0 5px;
+    top: 0;
+    right: 0px;
+    width: 20px;
+    height: 5px;
+    background-color: #fc6;
+    transition: all .4s;
+}
+
+/* .Scrollbar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background: #fc6;
+}
+.Scrollbar::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #fc6;
+} */
+
+.Scrollbar span {
+    position: absolute;
+    top: 0;
+    height: 1px;
+    right: 0;
+    background: #fc6;
+    z-index: 1;
+    /* transition: all .3s; */
+}
+.Scrollbar span:last-child { left: 0; }
+
+.Navigation p {
+    letter-spacing: 4px;
+    font-size: .55rem;
+    margin: 3px;
+    pointer-events: auto;
+    cursor: default;
+    color: #fc6;
+}
+/* .Navigation p:hover { color: #fff; transition: all .3s; } */
+
+@media(max-width: 576px) {
+    .Navigation { 
+        opacity: 0; 
+        transform: rotate(-90deg) translate(-70%, -7px) scale(1.2);
+    }
+}
+
+@media(min-width: 576px) {
+    .Navigation { opacity: 1!important; }
+}

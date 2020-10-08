@@ -1,0 +1,44 @@
+.Portfolio {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    height: calc( 100vh - 55px );
+    margin-top: 55px;
+    display: flex;
+    overflow: hidden;
+    transition: all .7s;
+
+    /*  */
+}
+
+.AllProjects {
+    background-color: #232323;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: calc(25% - 55px);
+    margin-left: 55px;
+    order: 1;
+}
+
+.MainProject {
+    width: 75%;
+    order: 2;
+}
+
+.Projs {
+    opacity: 0;
+}
+
+@media(max-width: 1024px) {
+    .AllProjects { position: absolute; width: 30% }
+    .MainProject { width: calc(100% - 55px); margin-left: 55px; }
+}
+@media(max-width: 768px) {
+    .AllProjects { width: calc(50% - 55px); }
+}
+@media(max-width: 576px) {
+    .Portfolio { height: 100vh; margin-top: 0!important; }
+    .MainProject { width: 100%; margin-left: 0; }
+    .AllProjects { margin: 0; width: 100%; overflow: scroll; }
+}

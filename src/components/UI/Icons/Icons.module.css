@@ -1,0 +1,43 @@
+.Icon {
+    position: relative;
+    background-color: #fff;
+    /* font-weight: bold; */
+    text-align: center;
+    width: fit-content;
+    min-width: 22px;
+    line-height: 22px;
+    margin: 10px;
+    font-size: .75rem;
+    pointer-events: auto;
+}
+
+.Icon a { 
+    position: relative; 
+    z-index: 2; 
+    color: #232323;
+    padding: 6px;
+}
+
+.Icon::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffcc66;
+    z-index: 1;
+}
+
+.Icon:hover::before {
+    width: 100%;
+    transition: all .3s ease-in;
+}
+
+
+@media (max-width: 576px) {
+    .Icon { 
+        width: 40px;
+        line-height: 40px;
+        font-size: 1em; }
+}

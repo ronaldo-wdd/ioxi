@@ -1,0 +1,25 @@
+.Images {
+    width: 75%;
+    height: 100%;
+    float: right;
+    overflow-y: hidden;
+    /* padding-top: 100vh; */
+    box-sizing: content-box;
+}
+
+.Image {
+    background-size: cover!important;
+    width: 100%;
+}
+
+@media(max-width: 1024px) {
+    .Images { width: calc(100% - 55px) }
+}
+@media(max-width: 576px) {
+    .Images { width: 100% }
+    .Image {
+        width: 100%;
+        opacity: 1!important;
+        height: 30vh!important;
+    }
+}

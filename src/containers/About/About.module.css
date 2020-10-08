@@ -1,0 +1,109 @@
+.About {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 55px);
+    margin: 55px 55px auto 25%;
+    /* overscroll-behavior: none; */
+}
+.About h1::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 13px;
+    background-color: #FFCC66;
+    width: 70px;
+    height: 13px;
+    z-index: -1;
+    opacity: 1;
+}
+
+.Profile {
+    position: relative;
+    margin-right: 60px;
+    height: 66vh;
+    /* width: 344px; */
+}
+.Profile h1 {
+    position: absolute;
+    margin: 22px;
+    bottom: 0;
+    z-index: 2;
+    line-height: 1.2em;
+    font-size: 3em;
+    /* display: none; */
+}
+.Img {
+    width: 344px;
+    height: 100%;
+}
+
+.Profile::after, .Text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    background: linear-gradient(to top, #232323 30%, #2323230a 90%);
+    pointer-events: none;
+}
+
+.Text {
+    position: relative;
+    height: 66vh;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+}
+.Text h1 {
+    margin-top: 0;
+    position: relative;
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+.Text p {
+    position: relative;
+    font-size: .8em;
+    margin: 30px 0 30px 50px;
+}
+.Text p::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -5px;
+    width: 1px;
+    height: 100%;
+    max-height: 50px;
+    background: #FFCC66;
+    opacity: 1;
+}
+.Text .Scroll {
+    /* height: 100%; */
+    padding-bottom: 85px;
+    /* overflow-y: scroll; */
+}
+
+
+@media (max-width: 1024px) {
+    .About {  margin-left: 55px; }
+    .Profile {  margin-right: 40px; }
+}
+@media (max-width: 991px) {
+    .Profile, .Text { height: 75vh; }
+}
+@media (max-width: 768px) {
+    .About { display: block; width: 100%; overflow-y: scroll; }
+    .Profile { margin: 0; width: calc(100vw - 110px); }
+    .Img { width: 100%; }
+    .Text { max-width: 100%; }
+    .Text { height: auto; }
+    .Text h1 { display: none; }
+    .Text h1 { margin-left: 20px; }
+    .Text p { margin: 30px 22px 30px 80px; font-size: .9em; }
+    .Scroll { transform: translateY(0px)!important; height: 100%; overflow-y: scroll; }
+}
+@media (max-width: 576px) {
+    .Profile { width: 100vw }
+    .About { margin: 55px 0 0; }
+}

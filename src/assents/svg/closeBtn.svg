@@ -1,0 +1,14 @@
+<svg id="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .cls-1{fill:#232323;}
+            .cls-2{fill:#fc6;}
+            .cls-3{fill:#fff;}
+        </style>
+    </defs>
+
+    <title>closeBtn</title>
+    <rect id="rectG" class="cls-1" width="100" height="100"/>
+    <g id="rectY"><rect class="cls-2" width="100" height="100"/></g>
+    <path class="cls-3" d="M0,0V100H100V0ZM62.55,68.25l-9-8,0,0-7.5-6.71-7.29,6.52,0,0-9,8-3.39-3L42.63,50.48,26.15,35.75l11.3-10.1,9,8,0,0L54,40.36l7.29-6.52,0,0,9-8,3.39,3L57.37,43.42,73.85,58.15Z"/>
+</svg>

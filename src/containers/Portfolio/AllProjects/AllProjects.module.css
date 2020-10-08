@@ -1,0 +1,19 @@
+.AllProjects {
+    /* transform: translateY(50%); */
+    position: relative;
+    /* left: 0; */
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+@media(max-width: 576px) {
+    .AllProjects { 
+        margin-top: 55px; 
+        padding-bottom: 55px;
+        top: 0!important;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
